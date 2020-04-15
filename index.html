@@ -11,13 +11,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="head text-center">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+  <header role="banner" class="head text-center">
     <div class="grid">
       <div class= "unit xs-1 s-1 m-1-2 l-1-2">
         <h1 class="peta push-0 pad-t-1-2 pad-b-1-2 gutter"><a class="name" href="index.html">Vault</a></h1>
       </div>
       <div class="unit xs-1 s-1 m-1-2 l-1-2 grid-middle">
-        <nav>
+        <nav role="navigation" id="nav" tabindex="0">
           <ol class="giga push-0 list-group-inline">
             <li class="gutter-1-2 pad-t-1-2 pad-b-1-2"><a href="tour.html">Tour</a></li>
             <li class="gutter-1-2 pad-t-1-2 pad-b-1-2"><a href="sign-up.html">Sign-Up</a></li>
@@ -27,7 +31,7 @@
     </div>
   </header>
 
-  <main>
+  <main role="main" id="main" tabindex="0">
     <section class="designed push">
       <div class="embed embed-golden">
         <img class="embed-item" src="images/laptop.jpg" alt="">
@@ -69,7 +73,7 @@
     </section>
   </main>
 
-  <footer class="footer pad-t-1-2 pad-b-1-2">
+  <footer class="footer pad-t-1-2 pad-b-1-2" role="contentinfo" tabindex="0">
     <nav class="links">
       <h2 class="text-center">Company</h2>
       <ul class="text-center">

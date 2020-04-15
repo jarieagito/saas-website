@@ -11,13 +11,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="head text-center">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+  <header role="banner" class="head text-center">
     <div class="grid">
       <div class= "unit xs-1 s-1 m-1-2 l-1-2">
         <h1 class="peta push-0 pad-t-1-2 pad-b-1-2 gutter"><a class="name" href="index.html">Vault</a></h1>
       </div>
       <div class="unit xs-1 s-1 m-1-2 l-1-2 grid-middle">
-        <nav>
+        <nav role="navigation" id="nav" tabindex="0">
           <ol class="giga push-0 list-group-inline">
             <li class="gutter-1-2 pad-t-1-2 pad-b-1-2"><a href="tour.html">Tour</a></li>
             <li class="gutter-1-2 pad-t-1-2 pad-b-1-2"><a href="sign-up.html">Sign-Up</a></li>
@@ -27,119 +31,127 @@
     </div>
   </header>
 
-  <section class="wrapper gutter-1-2">
-    <div>
-      <ul class="grid list-group push-b">
-        <li class="unit xs-1 s-1 m-1-2 l-1-3">
-          <img class="img-flex push" src="images-2/placeholder-circle.svg" alt="">
-          <div class="gutter-1-4 text-center">
-            <h2 class="tera push-0 not-bold">Personal Use</h2>
-            <a class="btn" href="#">Free</a>
-            <a class="btn" href="#">Premium</a>
-          </div>
-        </li>
-        <li class="unit xs-1 s-1 m-1-2 l-1-3">
-          <img class="img-flex push" src="images-2/placeholder-circle.svg" alt="">
-          <div class="gutter-1-4 text-center">
-            <h2 class="tera push-0 not-bold">Business</h2>
-            <a class="btn" href="#">Free</a>
-            <a class="btn" href="#">Premium</a>
-          </div>
-        </li>
-        <li class="unit xs-1 s-1 m-1-2 l-1-3">
-          <img class="img-flex push" src="images-2/placeholder-circle.svg" alt="">
-          <div class="gutter-1-4 text-center">
-            <h2 class="tera push-0 not-bold">Corporations</h2>
-            <a class="btn" href="#">Free</a>
-            <a class="btn" href="#">Premium</a>
-          </div>
-        </li>
-      </ul>
+  <main role="main" id="main" tabindex="0">
+    <section class="wrapper gutter-1-2">
+      <div>
+        <ul class="grid list-group push-b">
+          <li class="unit xs-1 s-1 m-1-2 l-1-3">
+            <div class="embed embed-16by9">
+              <img class="embed-item" src="images-2/placeholder-circle.svg" alt="">
+            </div>
+            <div class="gutter-1-4 text-center">
+              <h2 class="tera push-0 not-bold">Personal Use</h2>
+              <a class="btn" href="#">Free</a>
+              <a class="btn" href="#">Premium</a>
+            </div>
+          </li>
+          <li class="unit xs-1 s-1 m-1-2 l-1-3">
+            <div class="embed embed-16by9">
+              <img class="embed-item" src="images-2/placeholder-circle.svg" alt="">
+            </div>
+            <div class="gutter-1-4 text-center">
+              <h2 class="tera push-0 not-bold">Business</h2>
+              <a class="btn" href="#">Free</a>
+              <a class="btn" href="#">Premium</a>
+            </div>
+          </li>
+          <li class="unit xs-1 s-1 m-1-2 l-1-3">
+            <div class="embed embed-16by9">
+              <img class="embed-item" src="images-2/placeholder-circle.svg" alt="">
+            </div>
+            <div class="gutter-1-4 text-center">
+              <h2 class="tera push-0 not-bold">Corporations</h2>
+              <a class="btn" href="#">Free</a>
+              <a class="btn" href="#">Premium</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <div class="table-wrapper island scrollable">
+      <table class="push-0">
+        <caption class="text-left bold peta">Free</caption>
+        <thead>
+          <tr>
+            <th class="name" scope="col">Features</th>
+            <th class="user" scope="col">Personal Use</th>
+            <th class="people" scope="col">Business</th>
+            <th class="corp" scope="col">Corporations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="not-bold italic" scope="row">Sync All Devices</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th class="not-bold italic" scope="row">Share with others</th>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th class="not-bold italic" scope="row">Payment Autofill</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <th class="not-bold italic" scope="row">Unlimited Passwords</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
 
+    <div class="table-wrapper island scrollable">
+      <table class="push-0">
+        <caption class="text-left bold peta">Premium</caption>
+        <thead>
+          <tr>
+            <th class="name" scope="col">Features</th>
+            <th class="user" scope="col">Personal Use</th>
+            <th class="people" scope="col">Business</th>
+            <th class="corp" scope="col">Corporations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="not-bold italic" scope="row">Sync All Devices</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th class="not-bold italic" scope="row">Share with others</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th class="not-bold italic" scope="row">Payment Autofill</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th class="not-bold italic" scope="row">Unlimited Passwords</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
 
-  <div class="table-wrapper island scrollable">
-    <table class="push-0">
-      <caption class="text-center bold peta">Free</caption>
-      <thead>
-        <tr>
-          <th class="name" scope="col">Features</th>
-          <th class="user" scope="col">Personal Use</th>
-          <th class="people" scope="col">Business</th>
-          <th class="corp" scope="col">Corporations</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th class="not-bold italic" scope="row">Sync All Devices</th>
-          <td>Yes</td>
-          <td>Yes</td>
-          <td>Yes</td>
-        </tr>
-        <tr>
-          <th class="not-bold italic" scope="row">Share with others</th>
-          <td>No</td>
-          <td>Yes</td>
-          <td>Yes</td>
-        </tr>
-        <tr>
-          <th class="not-bold italic" scope="row">Payment Autofill</th>
-          <td>Yes</td>
-          <td>No</td>
-          <td>No</td>
-        </tr>
-        <tr>
-          <th class="not-bold italic" scope="row">Unlimited Passwords</th>
-          <td>Yes</td>
-          <td>Yes</td>
-          <td>Yes</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="table-wrapper island scrollable">
-    <table class="push-0">
-      <caption class="text-center bold peta">Premium</caption>
-      <thead>
-        <tr>
-          <th class="name" scope="col">Features</th>
-          <th class="user" scope="col">Personal Use</th>
-          <th class="people" scope="col">Business</th>
-          <th class="corp" scope="col">Corporations</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th class="not-bold italic" scope="row">Sync All Devices</th>
-          <td>Yes</td>
-          <td>Yes</td>
-          <td>Yes</td>
-        </tr>
-        <tr>
-          <th class="not-bold italic" scope="row">Share with others</th>
-          <td>Yes</td>
-          <td>Yes</td>
-          <td>Yes</td>
-        </tr>
-        <tr>
-          <th class="not-bold italic" scope="row">Payment Autofill</th>
-          <td>Yes</td>
-          <td>Yes</td>
-          <td>Yes</td>
-        </tr>
-        <tr>
-          <th class="not-bold italic" scope="row">Unlimited Passwords</th>
-          <td>Yes</td>
-          <td>Yes</td>
-          <td>Yes</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <footer class="footer pad-t-1-2 pad-b-1-2">
+  <footer class="footer pad-t-1-2 pad-b-1-2" role="contentinfo" tabindex="0">
     <nav class="links">
       <h2 class="text-center">Company</h2>
       <ul class="text-center">
