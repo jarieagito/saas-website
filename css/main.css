@@ -18,6 +18,7 @@ a {
 
 a:hover {
   color: #fff;
+  transition: all .4s linear;
 }
 
 .name:hover {
@@ -36,7 +37,7 @@ li {
 
 .designed-content {
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 50%;
   transform: translateX(-50%);
 }
