@@ -1,5 +1,5 @@
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 header {
@@ -20,6 +20,10 @@ a:hover {
   color: #fff;
 }
 
+.name:hover {
+  color: #c92500;
+}
+
 li {
   list-style-type: none;
   display: inline-block;
@@ -28,7 +32,6 @@ li {
 .designed {
   position: relative;
   color: #fff;
-
 }
 
 .designed-content {
@@ -39,7 +42,27 @@ li {
 }
 
 p {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e2e2e2;
+}
+
+.people {
+  width: 7em;
+}
+
+.corp {
+  width: 10em;
+}
+
+.notes {
+  width: 16em;
+}
+
+table {
+  min-width: 40em;
 }
 
 .footer {

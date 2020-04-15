@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Sign-up</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="head text-center">
+    <div class="grid">
+      <div class= "unit xs-1 s-1 m-1-2 l-1-2">
+        <h1 class="peta push-0 pad-t-1-2 pad-b-1-2 gutter"><a class="name" href="index.html">Vault</a></h1>
+      </div>
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 grid-middle">
+        <nav>
+          <ol class="giga push-0 list-group-inline">
+            <li class="gutter-1-2 pad-t-1-2 pad-b-1-2"><a href="tour.html">Tour</a></li>
+            <li class="gutter-1-2 pad-t-1-2 pad-b-1-2"><a href="sign-up.html">Sign-Up</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="contact gutter">
+    <h1 class="not-bold pad-t">Become A Member</h1>
+    <form class="push-0" method="POST" action="https://formspree.io/agit0003@algonquincollege.com">
+      <fieldset>
+
+        <div class="grid">
+
+          <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
+            <div class="push push-r-1-2">
+              <label for="username">Username</label>
+              <input id="username" required>
+            </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
+            <div class="push">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="" name="email" required>
+            </div>
+            <div class="push">
+              <label for="password">Password</label>
+              <input type="password" id="password" required>
+              <p class="milli">The only password you'll have to remember!</p>
+            </div>
+            <div class="push">
+              <label for="password">Confirm Password</label>
+              <input type="password" id="password" required>
+            </div>
+            <div class="push">
+              <label for="physical">Security Question</label>
+              <select id="physical" name="physical">
+                <option>Your first pet's name</option>
+                <option>First car</option>
+                <option>Your mother's maiden name</option>
+                <option>Your favourite color</option>
+              </select>
+            </div>
+            <div class="push">
+              <label for="text">Security Answer</label>
+              <input id="text" type="text" placeholder="" name="text" required>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="text-center pad-b-2">
+          <button class="btn mega" type="submit">Create an Account</button>
+          <input type="hidden" name="_subject" value="Request to join the mission">
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer class="footer pad-t-1-2 pad-b-1-2">
+    <nav class="links">
+      <h2 class="text-center">Company</h2>
+      <ul class="text-center">
+        <li><a class="btn" href="index.html">Home</a></li>
+        <li><a class="btn" href="tour.html">Tour</a></li>
+        <li><a class="btn" href="sign-up.html">Sign-up</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper gutter-1-2 text-center">
+      <small class="push-0 micro">Vault © <i>Password Safety</i>, 2000.</small>
+    </div>
+  </footer>
+</body>
+</html>
