@@ -17,8 +17,7 @@ a {
 }
 
 a:hover {
-  color: #000;
-  background-color: #fff;
+  color: #fff;
 }
 
 li {
@@ -41,4 +40,9 @@ li {
 
 p {
   font-family: 'Playfair Display', serif;
+}
+
+.footer {
+  background-color: #c8c6ca;
+  color: #000;
 }
