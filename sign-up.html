@@ -11,13 +11,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="head text-center">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+  <header role="banner" class="head text-center">
     <div class="grid">
       <div class="unit xs-1 s-1 m-1-2 l-1-2">
         <h1 class="peta push-0 pad-t-1-2 pad-b-1-2 gutter"><a class="name" href="index.html">Vault</a></h1>
       </div>
       <div class="unit xs-1 s-1 m-1-2 l-1-2 grid-middle">
-        <nav>
+        <nav role="navigation" id="nav" tabindex="0">
           <ol class="giga push-0 list-group-inline">
             <li class="gutter-1-2 pad-t-1-2 pad-b-1-2"><a href="tour.html">Tour</a></li>
             <li class="gutter-1-2 pad-t-1-2 pad-b-1-2"><a href="sign-up.html">Sign-Up</a></li>
@@ -27,32 +31,29 @@
     </div>
   </header>
 
-  <section class="contact gutter">
-    <h2 class="not-bold pad-t">Become A Member</h2>
-    <form class="push-0" method="POST" action="https://formspree.io/agit0003@algonquincollege.com">
-      <fieldset>
+  <main role="main" id="main" tabindex="0">
+    <section class="contact gutter">
+      <form class="push-0" method="POST" action="https://formspree.io/agit0003@algonquincollege.com">
+        <fieldset>
+          <legend class="bold pad-t pad-b">Become A Member</legend>
+          <div class="grid">
 
-        <div class="grid">
-
-          <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
-            <div class="push">
-              <label for="username">Username</label>
-              <input id="username" required>
+            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
+              <div class="push">
+                <label for="username">Username</label>
+                <input id="username" required>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1 s-1 m-1 l-1 xl-1">
-            <div class="push">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="" name="email" required>
-            </div>
-            <div class="push unit xs-1 s-1 m-1 l-1 xl-1">
-              <label for="password">Password</label>
-              <input type="password" id="password" required>
-              <p class="milli">The only password you'll have to remember!</p>
-            </div>
-            <div class="push unit xs-1 s-1 m-1 l-1 xl-1">
-              <label for="password">Confirm Password</label>
-              <input type="password" id="confirm" required>
+            <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+              <div class="push">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="" name="email" required>
+              </div>
+              <div class="push unit xs-1 s-1 m-1 l-1 xl-1">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <p class="milli">The only password you'll have to remember!</p>
+              </div>
             </div>
             <div class="push unit xs-1 s-1 m-1 l-1 xl">
               <label for="physical">Security Question</label>
@@ -68,19 +69,19 @@
               <input id="text" type="text" placeholder="" name="text" required>
             </div>
           </div>
-        </div>
 
-      </fieldset>
-      <fieldset>
-        <div class="text-center pad-b-2">
-          <button class="btn mega" type="submit">Create an Account</button>
-          <input type="hidden" name="_subject" value="Request to join the mission">
-        </div>
-      </fieldset>
-    </form>
-  </section>
+        </fieldset>
+        <fieldset>
+          <div class="text-center pad-b-2">
+            <button class="btn mega" type="submit">Create an Account</button>
+            <input type="hidden" name="_subject" value="Request to join the mission">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
 
-  <footer class="footer pad-t-1-2 pad-b-1-2">
+  <footer class="footer pad-t-1-2 pad-b-1-2" role="contentinfo" tabindex="0">
     <nav class="links">
       <h2 class="text-center">Company</h2>
       <ul class="text-center">
