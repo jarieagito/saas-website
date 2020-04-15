@@ -1,0 +1,23 @@
+header {
+  background-color: #d6ad3c;
+  color: #fff
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #b0820c;
+  background-color: #fff8e6;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
