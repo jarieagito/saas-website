@@ -1,6 +1,10 @@
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
 header {
-  background-color: #d6ad3c;
-  color: #fff
+  background-color: #c8c6ca;
+  color: #000;
 }
 
 .nav a {
@@ -9,15 +13,32 @@ header {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 a:hover {
-  color: #b0820c;
-  background-color: #fff8e6;
+  color: #000;
+  background-color: #fff;
 }
 
 li {
   list-style-type: none;
   display: inline-block;
+}
+
+.designed {
+  position: relative;
+  color: #fff;
+
+}
+
+.designed-content {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p {
+  font-family: 'Playfair Display', serif;
 }
